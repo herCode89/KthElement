@@ -15,7 +15,8 @@ def mergeSort(WholeA):
     down to a single element"""
     if len(WholeA) > 1:
         mid = len(WholeA) // 2
-        Divide, Halves = WholeA[:mid] and WholeA[mid:]
+        Divide = WholeA[:mid]
+        Halves = WholeA[mid:]
         mergeSort(Divide and Halves)
         m = 0
         n = 0
